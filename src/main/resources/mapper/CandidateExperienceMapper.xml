@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.intelligent_talent_matching.mapper.CandidateExperienceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.intelligent_talent_matching.entity.CandidateExperience">
+        <id column="experience_id" property="experienceId" />
+        <result column="experience_company" property="experienceCompany" />
+        <result column="experience_job" property="experienceJob" />
+        <result column="experience_start_date" property="experienceStartDate" />
+        <result column="experience_end_date" property="experienceEndDate" />
+        <result column="experience_create_time" property="experienceCreateTime" />
+        <result column="experience_update_time" property="experienceUpdateTime" />
+        <result column="experience_profile_id" property="experienceProfileId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        experience_id, experience_company, experience_job, experience_start_date, experience_end_date, experience_create_time, experience_update_time, experience_profile_id
+    </sql>
+
+</mapper>

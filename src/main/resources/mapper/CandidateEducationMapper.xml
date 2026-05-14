@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.intelligent_talent_matching.mapper.CandidateEducationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.intelligent_talent_matching.entity.CandidateEducation">
+        <id column="education_id" property="educationId" />
+        <result column="education_school" property="educationSchool" />
+        <result column="education_start_date" property="educationStartDate" />
+        <result column="education_end_date" property="educationEndDate" />
+        <result column="education_major" property="educationMajor" />
+        <result column="education_create_time" property="educationCreateTime" />
+        <result column="education_update_time" property="educationUpdateTime" />
+        <result column="education_profile_id" property="educationProfileId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        education_id, education_school, education_start_date, education_end_date, education_major, education_create_time, education_update_time, education_profile_id
+    </sql>
+
+</mapper>

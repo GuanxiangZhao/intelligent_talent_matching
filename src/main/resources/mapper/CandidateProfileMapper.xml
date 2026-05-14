@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.intelligent_talent_matching.mapper.CandidateProfileMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.intelligent_talent_matching.entity.CandidateProfile">
+        <id column="profile_id" property="profileId" />
+        <result column="profile_name" property="profileName" />
+        <result column="profile_age" property="profileAge" />
+        <result column="profile_year" property="profileYear" />
+        <result column="profile_tel" property="profileTel" />
+        <result column="profile_email" property="profileEmail" />
+        <result column="profile_localtion" property="profileLocaltion" />
+        <result column="profile_major" property="profileMajor" />
+        <result column="profile_introduction" property="profileIntroduction" />
+        <result column="profile_create_time" property="profileCreateTime" />
+        <result column="profile_update_time" property="profileUpdateTime" />
+        <result column="profile_user_id" property="profileUserId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        profile_id, profile_name, profile_age, profile_year, profile_tel, profile_email, profile_localtion, profile_major, profile_introduction, profile_create_time, profile_update_time, profile_user_id
+    </sql>
+
+</mapper>

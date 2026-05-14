@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.intelligent_talent_matching.mapper.JobApplicationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.intelligent_talent_matching.entity.JobApplication">
+        <id column="application_id" property="applicationId" />
+        <result column="application_candidate_id" property="applicationCandidateId" />
+        <result column="application_employer_id" property="applicationEmployerId" />
+        <result column="application_job_id" property="applicationJobId" />
+        <result column="application_create_time" property="applicationCreateTime" />
+        <result column="application_update_time" property="applicationUpdateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        application_id, application_candidate_id, application_employer_id, application_job_id, application_create_time, application_update_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.intelligent_talent_matching.mapper.JobMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.intelligent_talent_matching.entity.Job">
+        <id column="job_id" property="jobId" />
+        <result column="job_employer_id" property="jobEmployerId" />
+        <result column="job_name" property="jobName" />
+        <result column="job_description" property="jobDescription" />
+        <result column="job_requirements" property="jobRequirements" />
+        <result column="job_min_salary" property="jobMinSalary" />
+        <result column="job_max_salary" property="jobMaxSalary" />
+        <result column="job_count" property="jobCount" />
+        <result column="job_create_time" property="jobCreateTime" />
+        <result column="job_update_time" property="jobUpdateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        job_id, job_employer_id, job_name, job_description, job_requirements, job_min_salary, job_max_salary, job_count, job_create_time, job_update_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.intelligent_talent_matching.mapper.JobSkillMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.intelligent_talent_matching.entity.JobSkill">
+        <id column="job_skill_id" property="jobSkillId" />
+        <result column="job_skill_job_id" property="jobSkillJobId" />
+        <result column="job_skill_skill_id" property="jobSkillSkillId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        job_skill_id, job_skill_job_id, job_skill_skill_id
+    </sql>
+
+</mapper>
