@@ -1,7 +1,7 @@
-import Login from "./pages/Login"
+import Jobs from "./pages/Jobs"
 
 function App() {
-  return <Login />
+  return <Jobs />
 }
 
 export default App
